@@ -1,0 +1,57 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family:PTSerif ;
+}
+body{
+    overflow: hidden;
+}
+
+main{
+    height: 100vh;
+    width: 100%; 
+    overflow-y: scroll;  
+    >div>div{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color: azure;
+        font-size: 50px;      
+    }
+    >div>div:nth-of-type(1){
+        background-color: blue;
+    }
+    >div>div:nth-of-type(2){
+        background-color: magenta;
+    }
+    >div>div:nth-of-type(3){
+        background-color: maroon;
+    }
+    >div>div:nth-of-type(4){
+        background-color: purple;
+    }
+    
+}
+@font-face {
+    font-family:PTSerif ;
+    src: url(../font/PTSerif-Regular.ttf);
+}
+
+#nav{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;  
+   transform: translateX(-16px);   
+    >span{
+        position: absolute;
+        top:-500%;       
+        font-size: 25px;
+        font-family:PTSerif ;
+        color: white;      
+    }  
+}
+
